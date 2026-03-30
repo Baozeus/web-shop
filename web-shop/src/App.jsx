@@ -1,14 +1,20 @@
-import { useState } from 'react'
 import './App.css'
-
+import Header from './layout/Header'
+import HeroSection from './Home/HeroSection'
+import Categories from './Home/Categories'
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      <h1 class="text-3xl font-bold">hi</h1>
-    </>
+      <>
+        <Header/>
+        <HeroSection/>
+        <div className='max-w-300 mx-auto mt-5'>
+          <Categories/>
+        </div>
+      </>
+
   )
 }
 
 export default App
+
